@@ -1,0 +1,132 @@
+/* ===== Sugar & Honey - shared stylesheet ===== */
+
+/* Colors used throughout the site */
+:root {
+    --pink-light: #fff0f5;   /* page background */
+    --pink:       #f8c8dc;   /* header/footer */
+    --pink-dark:  #d6457f;   /* headings, accents */
+    --text:       #4a3b40;   /* body text */
+    --white:      #ffffff;
+}
+
+/* Basic reset and page setup */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: var(--pink-light);
+    color: var(--text);
+    font-family: 'Montserrat', Arial, sans-serif;   /* simple, block-ish font */
+    line-height: 1.6;
+}
+
+/* Keeps content centered and not too wide */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ===== Header ===== */
+.site-header {
+    background-color: var(--pink);
+    padding: 15px 20px;
+    text-align: center;
+}
+
+.brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: var(--pink-dark);
+}
+
+/* Circular "SH" logo in curly script */
+.logo {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--white);
+    border: 3px solid var(--pink-dark);
+    font-family: 'Great Vibes', cursive;
+    font-size: 30px;
+}
+
+/* Bakery name in curly script */
+.brand-name {
+    font-family: 'Great Vibes', cursive;
+    font-size: 48px;
+}
+
+/* ===== Main content ===== */
+main {
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+h1, h2, h3 {
+    color: var(--pink-dark);
+}
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Welcome banner */
+.hero {
+    background-color: var(--white);
+    border: 2px solid var(--pink);
+    border-radius: 12px;
+    text-align: center;
+    padding: 30px 20px;
+    margin-bottom: 30px;
+}
+
+.hero h1 {
+    margin-top: 0;
+}
+
+/* ===== Product cards ===== */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    background-color: var(--white);
+    border: 2px solid var(--pink);
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+}
+
+.product-image {
+    font-size: 60px;
+}
+
+.product-card h3 {
+    margin: 10px 0 5px;
+}
+
+.price {
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--pink-dark);
+}
+
+/* ===== Footer ===== */
+.site-footer {
+    background-color: var(--pink);
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+}
